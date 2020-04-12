@@ -27,13 +27,13 @@ public class Conexao {
     }
     
     public static void fecharConexao(Connection con) {
-        if (con != null) {
+        
             try {
                 con.close();
                 System.out.println("===== Desconectado =====\n");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
+        
     }
 }

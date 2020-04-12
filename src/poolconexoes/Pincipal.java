@@ -1,12 +1,11 @@
 package poolconexoes;
 
 import java.sql.*;
-import java.sql.PreparedStatement;
 
 public class Pincipal {
     public static void main(String[] args) throws SQLException {
 	
-        /*Connection con = null;
+        Connection con = null;
         PreparedStatement stmt;
         ResultSet rs;
         
@@ -19,6 +18,6 @@ public class Pincipal {
             System.out.println("Usuario: " + rs.getString("username") + " Senha: "+rs.getString("senha") );
         }
         System.out.println("\n===== Finalizando a conexão =====");
-        Conexao.fecharConexao(con);*/
+        Conexao.fecharConexao(con);
     }
 }
