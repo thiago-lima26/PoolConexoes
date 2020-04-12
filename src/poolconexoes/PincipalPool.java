@@ -18,8 +18,8 @@ public class PincipalPool {
         	try {
         		PoolConexoes poolcon = PoolConexoes.getInstance(con, stmt, rs);
 				
-        	}catch (Exception e) {
-				// TODO: handle exception
+        	}catch (SQLException e) {
+    			e.printStackTrace();
 			}finally {
 				System.out.println("\n===== Finalizando a conexão =====");
 		        PoolConexoes.fecharPoolConexoes(con);
