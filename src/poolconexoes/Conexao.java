@@ -30,7 +30,7 @@ public class Conexao {
         
             try {
                 con.close();
-                System.out.println("===== Desconectado =====\n");
+                System.out.println("===== Desconectado =====");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
