@@ -43,18 +43,19 @@ public class PoolConexoes {
 			
 			try {
 				instances[i] = new PoolConexoes();
-				System.out.println("===== Iniciando uma conexão =====");
+				System.out.println("\n===== Iniciando uma conexão =====");
 				con = Conexao.conectarBD(con);
 				stmt = (PreparedStatement) con.prepareStatement("SELECT * FROM users"); 
         		rs = stmt.executeQuery();
         		while (rs.next()) { 
 					System.out.println("Usuario: " + rs.getString("username") + "\tSenha: " + rs.getString("senha") ); 
 				}
-        		System.out.println("\n");
+        		
 			}catch (Exception e) {
 				e.getMessage();
 			}
 		}
+		System.out.print("\n");
     }
     public void fecharPoolConexoes() throws SQLException{
 	
